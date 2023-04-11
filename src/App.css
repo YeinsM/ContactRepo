@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "GalaxyFontL";
+  src: url("../public/assets/fonts/SamsungSharpSans.otf");
+  font-weight: 300; /* Variación ligera */
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: "GalaxyFont";
+  src: url("../public/assets/fonts/SamsungSharpSansMd.otf");
+  font-weight: 400; /* Variación normal */
+  font-style: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: "GalaxyFontB";
+  src: url("../public/assets/fonts/SamsungSharpSansBd.ttf");
+  font-weight: 700; /* Variación negrita */
+  font-style: normal;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.light {
+  font-family: "GalaxyFontL", sans-serif;
+  font-weight: 300; /* Aplica la variación ligera */
 }
 
-.App-link {
-  color: #61dafb;
+.normal {
+  font-family: "GalaxyFont", sans-serif;
+  font-weight: 400; /* Aplica la variación normal */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bold {
+  font-family: "GalaxyFontB", sans-serif;
+  font-weight: 700; /* Aplica la variación negrita */
+}
+
+.MuiFormControlLabel-label {
+  font-family: "GalaxyFont", sans-serif;
+  font-weight: 400;
+}
+
+.MuiInputBase-input::placeholder {
+  font-family: "GalaxyFont", sans-serif;
+  font-weight: 400; /* Aplica la variación normal */
+}
+
+.datagrid-root {
+  font-family: "GalaxyFont", sans-serif;
+  font-weight: 400;
+}
+
+.datagrid-header {
+  font-family: "GalaxyFontB", sans-serif;
+  font-weight: 700;
+}
+
+.datagrid-footer {
+  font-family: "GalaxyFont", sans-serif;
+  background-color: #f0f0f0;
+  border-top: 1px solid #ccc;
+  font-weight: 700;
+}
+
+.even-row {
+  background-color: #d3d3d3;
+}
+
+.odd-row {
+  background-color: #ffffff;
 }
